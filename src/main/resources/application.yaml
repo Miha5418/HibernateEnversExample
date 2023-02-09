@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    hikari:
+      auto-commit: false
+      schema: ${podcast.db.owner}
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.connection.provider_disables_autocommit: true
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+      hibernate.temp.use_jdbc_metadata_defaults: false
+      org:
+        hibernate:
+          envers:
+            audit_strategy: "org.hibernate.envers.strategy.internal.ValidityAuditStrategy"

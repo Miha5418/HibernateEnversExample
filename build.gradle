@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.6.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'net.nemerosa.versioning' version '2.6.1'
+}
+
+group 'org.hibenrate.envers.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+group = 'org.hibernate.envers.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+targetCompatibility = 11
+
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'org.postgresql:postgresql'
+    compileOnly 'org.projectlombok:lombok'
+    compile('org.modelmapper:modelmapper:1.1.0')
+    annotationProcessor("org.projectlombok:lombok")
+    compile 'org.hibernate:hibernate-envers'
+
+}

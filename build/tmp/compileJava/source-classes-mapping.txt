@@ -1,0 +1,28 @@
+org/hibernate/envers/example/dto/ForumDto.java
+ org.hibernate.envers.example.dto.ForumDto
+org/hibernate/envers/example/entity/ParentEntity.java
+ org.hibernate.envers.example.entity.ParentEntity
+org/hibernate/envers/example/dto/MessageDto.java
+ org.hibernate.envers.example.dto.MessageDto
+org/hibernate/envers/example/repository/ForumRepo.java
+ org.hibernate.envers.example.repository.ForumRepo
+org/hibernate/envers/example/entity/ExampleRevEntity.java
+ org.hibernate.envers.example.entity.ExampleRevEntity
+org/hibernate/envers/example/ExampleApplication.java
+ org.hibernate.envers.example.ExampleApplication
+org/hibernate/envers/example/repository/MessageRepo.java
+ org.hibernate.envers.example.repository.MessageRepo
+org/hibernate/envers/example/controller/ForumController.java
+ org.hibernate.envers.example.controller.ForumController
+org/hibernate/envers/example/service/ExampleListener.java
+ org.hibernate.envers.example.service.ExampleListener
+org/hibernate/envers/example/service/ForumService.java
+ org.hibernate.envers.example.service.ForumService
+org/hibernate/envers/example/controller/MessageController.java
+ org.hibernate.envers.example.controller.MessageController
+org/hibernate/envers/example/entity/Message.java
+ org.hibernate.envers.example.entity.Message
+org/hibernate/envers/example/service/MessageService.java
+ org.hibernate.envers.example.service.MessageService
+org/hibernate/envers/example/entity/Forum.java
+ org.hibernate.envers.example.entity.Forum
